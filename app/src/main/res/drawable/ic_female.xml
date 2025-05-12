@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/ic_female.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="#E91E63">
+    <path
+        android:fillColor="#E91E63"
+        android:pathData="M12,2C13.66,2 15,3.34 15,5C15,6.66 13.66,8 12,8C10.34,8 9,6.66 9,5C9,3.34 10.34,2 12,2ZM12,10C14.67,10 17,12.33 17,15L15,15C15,13.34 13.66,12 12,12C10.34,12 9,13.34 9,15L7,15C7,12.33 9.33,10 12,10Z" />
+</vector>

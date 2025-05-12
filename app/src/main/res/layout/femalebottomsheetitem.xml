@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottomsheetfeamle"
+    android:orientation="vertical"
+    android:id="@+id/knowmoretextview"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/closeicon"
+            android:contentDescription="Close"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get ready for a whole new experience with one-click"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="12dp"
+            android:layout_below="@id/ivClose"
+            android:layout_alignParentLeft="true"/>
+
+    </RelativeLayout>
+
+
+
+
+    <androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#AED7F6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@drawable/bgcardfemale">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:backgroundTint="#AED7F6"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bgcardfemale">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_female"
+            android:contentDescription="Icon" />
+
+        <TextView
+            android:layout_marginStart="8dp"
+            android:text="Booking for female"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginStart="8dp"
+            android:text="Knows more"
+          android:layout_marginRight="10dp"
+          android:drawablePadding="10dp"
+            android:drawableRight="@drawable/toggleicon"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#073F87"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activate the 'Booking for female' toggle and watch your booking experience transform. Get access to auto-applied features curated specially for female travellers"
+        android:textSize="14sp"
+       android:paddingStart="6dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+    <!-- Add the cards as sections -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@drawable/bgcardfemale"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:text="👧 4.3"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="#D81B60"
+            android:background="@drawable/bgcardfemale"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Shows buses rated by female passengers for safety, reliability, comfort, &amp; cleanliness."
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@drawable/bgcardfemale"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:paddingStart="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👍 Most Booked by female "
+            android:backgroundTint="#D81B60"
+            android:background="@drawable/bgcardfemale"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="Shows buses rated by female passengers for safety, reliability, comfort, &amp; cleanliness."
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@drawable/bgcardfemale"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:text=" Female Favorites - sort"
+            android:background="@drawable/bgcardfemale"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_female"
+            android:paddingStart="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Shows popular  buses in hifh demand among female passengers ."
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@drawable/bgcardfemale"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:text=" 🧖‍♀️ Most selected by females "
+            android:backgroundTint="#D81B60"
+            android:background="@drawable/bgcardfemale"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingStart="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Shows  popular boarding &amp; dropping point locations among female travellers ."
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEnableFemale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Got it"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primary_blue"
+        android:background="@drawable/bgcardfemale"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"/>
+        />
+</LinearLayout>

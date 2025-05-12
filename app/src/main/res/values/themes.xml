@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Vehicletracking" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#A045B0</item>
+        <item name="colorPrimaryVariant">#3F51B5</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">#69BDB5</item>
+        <item name="colorSecondaryVariant">#009688</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Theme.Vehicletracking" parent="Base.Theme.Vehicletracking" />
+</resources>

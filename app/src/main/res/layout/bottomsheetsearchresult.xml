@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:elevation="8dp"
+    android:radius="16dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/bcloseicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/closeicon"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginStart="350dp"
+        android:layout_marginBottom="70dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:contentDescription="Close" />
+
+        <LinearLayout
+            android:id="@+id/bottomSheetBusDetails"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- Bus Image with rounded corners -->
+            <ImageView
+                android:id="@+id/imageBus"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bottomroundcorner"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/slidehomepage5" />
+
+
+            <!-- Bus Name -->
+            <TextView
+                android:id="@+id/busName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volvo Express"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Journey Date -->
+            <TextView
+                android:id="@+id/journeyDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="12 May 2025"
+                android:textColor="#666666" />
+
+            <!-- Route -->
+            <TextView
+                android:id="@+id/busRoute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Shimla ➔ Manali"
+                android:textColor="#555555" />
+
+            <!-- Timings -->
+            <TextView
+                android:id="@+id/busTiming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="08:00 AM - 02:00 PM"
+                android:textColor="#4CAF50" />
+
+            <!-- Amenities -->
+            <TextView
+                android:id="@+id/textAmenities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Amenities: AC, Charging Point, WiFi"
+                android:textColor="#444" />
+
+            <!-- Cancellation Policy -->
+            <TextView
+                android:id="@+id/textCancellation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Cancellation Policy: Full refund before 6 hrs"
+                android:textColor="#444" />
+
+            <!-- Fare -->
+            <TextView
+                android:id="@+id/textFare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="₹650.00"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

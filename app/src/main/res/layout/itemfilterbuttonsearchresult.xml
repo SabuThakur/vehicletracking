@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:orientation="horizontal">
+
+    <!-- Horizontal ScrollView for the filter buttons -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <!-- CardView for the Sort Button -->
+        <LinearLayout
+            android:id="@+id/cardSort"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/bghorizontalunselectedfilter"
+            android:visibility="visible"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardElevation="2dp">
+
+            <TextView
+                android:id="@+id/tvSortTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Sort : Most Popular"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</FrameLayout>

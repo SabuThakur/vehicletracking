@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomSheetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bootombackgroundfindbus"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:fitsSystemWindows="true">
+    <TextView
+        android:id="@+id/tvBusDetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volvo AC"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="14dp"/>
+    <ImageView
+        android:id="@+id/imgBusDetail"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/slidehomepage5" />
+    <!-- Feature 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvBusDetailDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volvo AC buses offer superior comfort with semi-sleeper seats, powerful air conditioning, and smooth ride quality over hilly terrain."
+        android:textSize="15sp"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

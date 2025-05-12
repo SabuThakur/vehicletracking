@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".searchbuss"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/gradientbg1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/navigationback"
+                android:contentDescription="Back"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:animateLayoutChanges="true"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+             android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rou"
+               android:textStyle="italic"
+                android:textSize="30dp"
+              android:textColor="@color/black"
+                android:layout_marginStart="12dp"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="te"
+                    android:textStyle="italic"
+                    android:textSize="30dp"
+                    android:textColor="#091665"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mate"
+                    android:layout_marginStart="2dp"
+                    android:textStyle="italic"
+                    android:textSize="30dp"
+                    android:textColor="#308DD7"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Main Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/cardsearchbus"
+            android:layout_marginTop="16dp"
+            android:padding="16dp">
+
+            <!-- From Field -->
+            <EditText
+                android:id="@+id/fromField"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="From"
+                android:drawablePadding="10dp"
+                android:background="@drawable/cardfindbusfromto"
+                android:paddingHorizontal="12dp"
+              android:drawableLeft="@drawable/fromicon"
+                android:textColorHint="#888888" />
+            <ImageView
+                android:src="@drawable/swapicon"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:padding="4dp"
+                android:layout_marginHorizontal="300dp" />
+
+            <!-- To Field -->
+            <EditText
+                android:id="@+id/toField"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="To"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/toicon"
+                android:background="@drawable/cardfindbusfromto"
+                android:paddingHorizontal="12dp"
+
+                android:textColorHint="#888888" />
+
+            <!-- Departure Date Label and Show More -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Departure Date"
+                    android:textColor="#888888"
+                    android:layout_marginRight="40dp"/>
+
+                <TextView
+                    android:id="@+id/showMoreDates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📅 Show More Dates"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="#007BFF"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/writedateselect"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Selected date"
+                android:drawablePadding="5dp"
+                android:paddingHorizontal="1dp"
+                android:textColorHint="#888888" />
+
+            <!-- Date Picker Recycler -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dateRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:overScrollMode="never" />
+
+            <!-- Bus Type Filters -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/busTypeRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:overScrollMode="never" />
+
+            <!-- Search Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/searchButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Search Buses"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:background="@drawable/buttonfindbus"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+        <!-- Section Title -->
+        <TextView
+            android:id="@+id/tvBusTypeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Every Journey Deserves the Right Bus "
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:textColor="#032139"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+        <TextView
+            android:id="@+id/tvBusTypeLabell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find yours here !"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+
+            android:layout_marginStart="16dp" />
+
+        <!-- Cards Recycler -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/busCardRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:overScrollMode="never"
+            android:orientation="horizontal" />
+
+
+
+
+    </LinearLayout>
+</ScrollView>

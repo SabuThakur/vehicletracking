@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "662889469136",
+    "project_id": "transport-app-6b935",
+    "storage_bucket": "transport-app-6b935.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662889469136:android:6efa8674d306446154bad5",
+        "android_client_info": {
+          "package_name": "com.example.vehicletracking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMTWvRjIlsSB2Yjgc96ahLVdhrpElLxeo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

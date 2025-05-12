@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white">
+
+        <!-- Left Aligned Circular Image -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/busImage"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/slidehomepage5"
+            app:civ_border_color="#000000"
+            app:civ_border_width="2dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Bus Name -->
+        <TextView
+            android:id="@+id/busName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Volvo Express"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            app:layout_constraintStart_toEndOf="@id/busImage"
+            app:layout_constraintTop_toTopOf="@id/busImage"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Journey Date -->
+        <TextView
+            android:id="@+id/journeyDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="12 May 2025"
+            android:textColor="#555"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@+id/busName"
+            app:layout_constraintEnd_toEndOf="@+id/busName"
+            app:layout_constraintTop_toBottomOf="@id/busName" />
+
+        <!-- Route -->
+        <TextView
+            android:id="@+id/busRoute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Shimla ➔ Manali"
+            android:textColor="#666"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@+id/busName"
+            app:layout_constraintEnd_toEndOf="@+id/busName"
+            app:layout_constraintTop_toBottomOf="@id/journeyDate" />
+
+        <!-- Departure Time -->
+        <TextView
+            android:id="@+id/departureTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08:00 AM - 02:00 PM"
+            android:textColor="#4CAF50"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@+id/busName"
+            app:layout_constraintTop_toBottomOf="@id/busRoute" />
+
+        <!-- Icon Row: Save + Share -->
+
+        <ImageView
+            android:id="@+id/shareIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="Share"
+            android:src="@drawable/shareicon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <View
+            android:id="@+id/horizontalLine"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/departureTime"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <TextView
+        android:id="@+id/viewMoreBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View More"
+        android:textColor="@color/primary_blue"
+        android:textSize="14sp"
+        android:paddingTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/horizontalLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
